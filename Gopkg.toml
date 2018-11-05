@@ -34,9 +34,8 @@
   version = "1.4.7"
 
 [[constraint]]
-  #branch = "v1"
+  branch = "v1"
   name = "github.com/coreos/go-oidc"
-  version = "2.0.0"
 
 [[constraint]]
   branch = "master"
