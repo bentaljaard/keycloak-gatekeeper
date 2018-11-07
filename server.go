@@ -708,7 +708,7 @@ func (r *oauthProxy) newOpenIDClient() (*oidc.Client, oidc.ProviderConfig, *http
 		RedirectURL:    fmt.Sprintf("%s/oauth/callback", r.config.RedirectionURL),
 		ProviderConfig: config,
 		Scope:          append(r.config.Scopes, oidc.DefaultScope...),
-		SkipClientIDCheck: r.config.SkipClientID,
+
 	})
 	if err != nil {
 		return nil, config, hc, err
